@@ -1,86 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formulário</title>
-    </head>
-    <body>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="listas.html">Listas</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="tabela.html">Tabela</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="img.html">Imagens</a>
-            </li>
-        </ul>
 
-        <h2>FORMULÁRIO</h2>
+<head>
+    <title>Formulário</title>
+</head>
 
-        <form>
-            <div>
-                <label for="usuario">Usuário: </label>
-                <input type="text" name="usuario" id="usuario">
-            </div>
+<body>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="listas.html">Listas</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="tabela.html">Tabela</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="img.html">Imagens</a>
+        </li>
+    </ul>
 
-            <br>
+    <h2>FORMULÁRIO</h2>
 
-            <div>
-                <label for="senha">Senha: </label>
-                <input type="password" name="senha" id="senha">
-            </div>
-            
-            <br>
+    <form>
+        <div>
+            <label for="usuario">Usuário: </label>
+            <input type="text" name="usuario" id="usuario">
+        </div>
 
-            
-            <div>
-             <label for="nome">Nome: </label>
-             <input type="text" id="nome" name="nome">
-            </div>
+        <br>
 
-            <br>
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+        </div>
 
-            <div>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-            </div>
+        <br>
 
-            <br>
 
-            <div>
-                 <label for="numero">Idade: </label>
-                 <input type="number" min="0" max="100" id="numero" number="numero">
-            </div>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome">
+        </div>
 
-            <br>
+        <br>
 
-            <div>
-                <label for="dataEvento">Data do evento: </label>
-                <input type="date" name="dataEvento" id="dataEvento">
-            </div>
+        <div>
+            <label for="email">
+                Email: <input type="email">
 
-            <br>
-            
-            <div>
+            </label>
+
+        </div>
+
+        <br>
+
+        <div>
+            <label for="peso">
+                Peso: <input type="number" min="0" max="200" step="0.5">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="volume">
+                Volume: <input type="range" min="0" max="100" step="20">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <Legend> Estado Civil</Legend>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="casado">Casado
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="solteiro">Solteiro
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="est_civil" value="divorciado">Divorciado
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+
+       
+
+        <div>
+            <fieldset>
+                <legend>Produtos</legend>
+                <p>
+                <label>
+                    <input type="checkbox" name="computador" value="computador">Computador
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input type="checkbox" name="impressora" value="impressora">Impressora
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input type="checkbox" name="monitor" value="monitor">Monitor
+                </label>
+                </p>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <p>
+            <label>
+            Deixe sua sugestão: 
+            <textarea cols="30" rows="5"></textarea>
+            </label>
+            </p>
+        </div>
+        <div>
+            <label for="dataEvento">Data do evento: </label>
+            <input type="date" name="dataEvento" id="dataEvento">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">
+                Telefone:
+                <input type="tel" required placeholder="(XX)XXXXX-XXXX">
+            </label>
+        </div>
+
+        <br>
+
+         <div>
+            <label for="numero">Idade: </label>
+            <input type="number" min="0" max="100" id="numero" number="numero">
+        </div>
+
+        <br>
+
+        <div>
             <label for="cores"> Cor favorita: </label>
-            <input type="color" >
-            </div>
+            <input type="color">
+        </div>
 
-                <br>
+        <br>
 
-            
 
-            <button type="submit"> Enviar</button>
-        </form>
-    </body>
+
+        <button type="submit"> Enviar</button>
+    </form>
+</body>
+
 </html>
