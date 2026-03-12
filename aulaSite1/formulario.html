@@ -99,25 +99,34 @@
             </fieldset>
         </div>
 
-       
+
 
         <div>
             <fieldset>
                 <legend>Produtos</legend>
                 <p>
-                <label>
-                    <input type="checkbox" name="computador" value="computador">Computador
-                </label>
+                    <label>
+                        <input type="checkbox" name="computador" value="computador">Computador
+                    </label>
                 </p>
                 <p>
-                <label>
-                    <input type="checkbox" name="impressora" value="impressora">Impressora
-                </label>
+                    <label>
+                        <input type="checkbox" name="impressora" value="impressora">Impressora
+                    </label>
                 </p>
                 <p>
-                <label>
-                    <input type="checkbox" name="monitor" value="monitor">Monitor
-                </label>
+                    <label>
+                        <input type="checkbox" name="monitor" value="monitor">Monitor
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Profissão</legend>
+                <p>
+                    <input type="radio" name="profissao" value="desempregado"> Desempregado
                 </p>
             </fieldset>
         </div>
@@ -126,10 +135,27 @@
 
         <div>
             <p>
-            <label>
-            Deixe sua sugestão: 
-            <textarea cols="30" rows="5"></textarea>
-            </label>
+                <label>
+                    Site: <input type="url" list="sites" name="link">
+                </label>
+            </p>
+            <datalist id="sites">
+                <option label="Portal Unipam" value="https://portal.unipam.edu.br/login"></option>
+
+                <option label="Virtual IF" value="https://virtualif.iftm.edu.br/VRTL/"></option>
+
+                <option label="Git Hub" value="https://github.com/"></option>
+            </datalist>
+        </div>
+
+        <br>
+        
+        <div>
+            <p>
+                <label>
+                    Deixe sua sugestão:
+                    <textarea cols="30" rows="5"></textarea>
+                </label>
             </p>
         </div>
         <div>
@@ -148,7 +174,7 @@
 
         <br>
 
-         <div>
+        <div>
             <label for="numero">Idade: </label>
             <input type="number" min="0" max="100" id="numero" number="numero">
         </div>
